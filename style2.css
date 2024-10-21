@@ -1,0 +1,69 @@
+body{
+    position: relative;
+}
+
+ header .logo{
+        color: #ea1f33;
+        font-size: 25px;
+        font-weight: bold;
+}
+    header .logo span{
+        color: #000;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu li{
+        list-style: none;
+        margin: 0 15px;
+    }
+    .menu li a{
+        font-size: 14px;
+        color: #000;
+        font-weight: 300;
+        transition: 0.2s;
+    }
+    .menu li a:hover{
+        color: #ea1f33;
+    }
+.one{
+    background-color: red;
+    padding: 1%;
+    border-width: 5px;
+    width: 450px;
+    margin-left: 8%;
+}
+.two{
+    background-color:burlywood;
+    padding: 1%;
+    border-width: 5px;
+    width: 450px;
+    margin-left: 8%;
+}
+header{
+        background-color: #fff;    
+}
+button{
+    background-color:red;
+    cursor: pointer;
+   padding: 8px;
+   align-items: center;
+   width: 160px;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+header.three {
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 240px;
+    height: 0;
+    padding: 24px;
+    padding-top: 4%;
+    
+}
+fieldset{
+    float: right;
+}

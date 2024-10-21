@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    z-index: 1; /* Assurez-vous que la barre latérale est au-dessus du contenu */
+  }
+  
+  .sidebar h2 {
+    color: white;
+    text-align: center;
+  }
+  .bi{
+    color: red;
+    background-color: red;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    margin-left: 200px; /* Pour espacer la barre latérale */
+  }
+  
+  
+  .dashboard {
+    margin-left:16%;
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    margin-right: 10px;
+  }
+
+ 
+  
+  .card:last-child {
+    margin-right: 0;
+  }
+  
+  .tables {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .table {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .table:last-child {
+    margin-right: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  th:first-child,
+  td:first-child {
+    border-left: 1px solid #ddd;
+  }
+  
+  th:last-child,
+  td:last-child {
+    border-right: 1px solid #ddd;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%; /* Pour occuper la largeur de l'écran sur les petits appareils */
+      height: auto; /* Pour ajuster la hauteur en fonction du contenu */
+      position: static; /* Pour le flux normal du document */
+    }
+    
+    .content {
+      margin-left: 0; /* Pour enlever la marge sur les petits appareils */
+    }
+    .dashboard {
+        margin-left:0%;
+    }
+    .tables {
+        display: grid;
+        justify-content: space-between;
+      }
+}
